@@ -1,0 +1,22 @@
+
+// creating a div for table operation
+<div class="form-group">
+  
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th># </th>
+        <th>First Name</th>
+        <th>Last Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of cricketPlayer; let i = index">  // using ngFor directive for iteration 
+        <td appHighLighter>{{i + 1}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.lastName}}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</div>
